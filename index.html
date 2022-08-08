@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <main class="container col-8 border border-success mt-5 mb-5">
+        <div class="row">
+            <section class="bg-secondary" style="height: 90px;">
+                <p class="d-flex justify-content-center  align-content-end h1 text-white">KLYCHES MOVIES</p>
+            </section>
+            <section>
+                <div>
+                    <form class="row g-4 m-2">
+                        <div class="col-12 nombre">
+                            <label for="inputEmail4" class="form-label">Nombres:</label>
+                            <input type="text" class="form-control" id="nombre">
+                            <div></div>
+                        </div>
+                        <div class="col-12 apellido">
+                            <label for="inputPassword4" class="form-label">Apellidos:</label>
+                            <input type="text" class="form-control" id="apellido">
+                            <div></div>
+                        </div>
+                        <div class="col-12 celular">
+                            <label for="inputPassword4" class="form-label">Celular:</label>
+                            <input type="number" class="form-control" id="celular">
+                            <div></div>
+                        </div>
+                        <div class="col-12 correo">
+                            <label for="inputAddress2" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="correo">
+                            <div></div>
+                        </div>
+                        <div class="col-6 fecha_nacimiento">
+                            <label for="inputAddress" class="form-label">Fecha de Nacimiento:</label>
+                            <input type="date" class="form-control" id="fecha_nacimiento">
+                            <div></div>
+                        </div>
+                        <div class="col-6 genero">
+                            <label for="inputState" class="form-label">Género:</label>
+                            <select id="genero" class="form-select">
+                                <option value="" selected disabled>Seleccionar género</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </select>
+                            <div></div>
+                        </div>
+                        <div class="col-md-6 contrasena">
+                            <label for="inputCity" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="contrasena" placeholder="Escribir contaseña">
+                            <div></div>
+                        </div>
+                        <div class="col-md-6  verificarContrasena">
+                            <label for="inputCity" class="form-label">Verificar Contraseña:</label>
+                            <input type="password" class="form-control" id="verificarContrasena" placeholder="Escribir nuevamente la contarseña">
+                            <div></div>
+                        </div>
+                        <div class="container p-3 mt-4 tipoPeliculas" style="background-color: rgb(210, 210, 210);">
+                            <label class=" mb-4 fs-3">Tipos de pelicula:</label>
+                            <div class="d-flex flex-row ">
+                                <div class="form-check col-2">
+                                    <input class="form-check-input" type="checkbox" value="Películas de Acción" id="peli_accion">
+                                    <label class="form-check-label" for="gridCheck">Acción</label>
+                                </div>
+                                <div class="form-check col-2">
+                                    <input class="form-check-input" type="checkbox" value="Películas de Drama" id="peli_drama">
+                                    <label class="form-check-label" for="gridCheck">Drama</label>
+                                </div>
+                                <div class="form-check col-2">
+                                    <input class="form-check-input" type="checkbox" value="Películas de Aventura" id="peli_aventura">
+                                    <label class="form-check-label" for="gridCheck">Aventura</label>
+                                </div>
+                                <div class="form-check col-2">
+                                    <input class="form-check-input" type="checkbox" value="Películas de Ficción id="peli_ficcion">
+                                    <label class="form-check-label" for="gridCheck">Ficción</label>
+                                </div>
+                                <div class="form-check col-2">
+                                    <input class="form-check-input" type="checkbox" value="Películas Animadas" id="peli_animadas">
+                                    <label class="form-check-label" for="gridCheck">Animadas</label>
+                                </div>
+                                <div class="form-check col-2">
+                                    <input class="form-check-input" type="checkbox" value="Otras Películas" id="peli_otras">
+                                    <label class="form-check-label" for="gridCheck">Otras</label>
+                                </div>
+                                <div></div>
+                            </div>
+    
+                        <div class="d-grid gap-2">
+                                <button onclick="registroUsuario()" id="btnEnviar" class="btn btn-success mt-5" type="button">Regístrate</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+
+<script src="assets/js/bootstrap.min.js" ></script>
+<script src="assets/js/index.js"> </script>
+</body>
+
+</html>
