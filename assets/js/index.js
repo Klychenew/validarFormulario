@@ -39,16 +39,18 @@ var validarContrasena = /^[A-Za-z0-9]/
 //FUNCION REGISTRO DE USUARIO
 function activarError(elemento, mensaje = '') {
     if (mensaje != '') {
-        elemento.lastElementChild.innerHTML = `<span class="text-danger"> ${mensaje} </span>`
+        elemento.lastElementChild.innerHTML = `<span class="text-danger existe_error"> ${mensaje} </span>`
     } else {
         elemento.lastElementChild.innerHTML = mensaje
     }
 }
 
-//FUNCION INGRESAR USUARIO NUEVO
-
+//FUNCION INGRESAR USUARIO NUEVO 
 function accesoUsuario (){
-    
+    var ingresar_bienvenida = !!document.querySelector(".existe_error")
+if (ingresar_bienvenida == false) {
+location.href="bievenida.html"
+}
 }
 
 function registroUsuario() {
@@ -144,11 +146,14 @@ function registroUsuario() {
     if (peliOtras.checked == true ) {
         console.log(peliOtras.value)
     }
-
+    accesoUsuario()
 }
 // NO ME SIRVE LA VALIDACION DE CONTRASEÑA
 
 //Seleccion de Peliculas
+
+
+
 
 
 
