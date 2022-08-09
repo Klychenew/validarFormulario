@@ -30,6 +30,9 @@ var claseVerificarContrasena = document.querySelector('.verificarContrasena')
 var claseTipoPelicula = document.querySelector('.tipoPelicula')
 var claseVerificarPelicula = document.querySelector ('.verificartipoPelicula')
 
+//VARIABLES PARA DEJAR INGRESAR USUARIO
+var mensajeNombre = document.querySelector('.mensajeNombre')
+
 //VARIABLES PARA EXPRESIONES REGULARES
 var validarContrasena = /^[A-Za-z0-9]/
 
